@@ -102,17 +102,19 @@
 
             </div>
 
+        </article>
+
             <section id="video">
 
-                <h2>A short video:</h2>
+                <h2>Welcome to Jericson Travel Agency!</h2>
 
+                <p>This video explains the different parts of my midterm website.</p>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/98qiOQFd7t0?si=_biUwtIAFb-B3oFb" 
                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
                 gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-                <p>This video explains the different parts of my midterm website.</p>
 
-
+                </section>
 
                   <!-- Form -->
 
@@ -127,15 +129,40 @@
         <fieldset>
         <legend>Contact Form</legend>
         
-        <div>Name:</div>
-        <input type="text">
+        <label for="name"> Name: (Required) </label>
+        <input id="name" name="name" type="text" required>
 
-        <div>Email Address:</div>
-        <input type="email">
+
+        <label for="email"> Email Address: (required)</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="phone"> Phone Number </label>
+                <input id="phone" name="phone" type="tel">
+
+        <label for="type">Phone Type:</label>
+        <select id="type">name="type">
+            <option value=""></option>
+            <option value="Home"></option>
+            <option value="Mobile"></option>
+            <option value="Work"></option>
+        </select>
+
+        <label for="message">Message:</label>
+        <textarea name="mwssage" required></textarea>
+
+        <fieldset>
+            <legend>Do you want a followup?</legend>
+            <ul>
+                <li><input type="radio" id="respond-yes" name="response"><label for="respond-yes"></label>Yes please!</label></li>
+                <li><input type="radio" id="respond-no" name="response"><label for="respond-no"></label>No thanks</label></li>
+
+            </ul>
+
+        </fieldset>
+
 
         <input type="submit" value="submit">
     
-
         </fieldset>
 
         </form>
