@@ -96,3 +96,7 @@ footer {
         -2px -2px 0px black,
         3px 3px 5px black;
 }
+
+#video {
+    text-align: center;
+}
