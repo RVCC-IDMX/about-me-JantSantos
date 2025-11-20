@@ -119,6 +119,10 @@ iframe {
         0 0 40px #00d0ff;
 }
 
+iframe {
+    max-width: 96%;
+}
+
 
 #fieldset, legend {
     border: 10px solid #000000;
