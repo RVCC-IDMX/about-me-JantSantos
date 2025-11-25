@@ -123,8 +123,72 @@ iframe {
     max-width: 96%;
 }
 
+#contact {
+    background-color: beige;
+    color: #003B4A;
+    padding: 2em;
+    border: 0.5em solid #000000;
+    border-radius: 2em;
+    max-width: 45em;
+    margin: 2em auto;
+}
 
-#fieldset, legend {
+#contact fieldset {
+    border: 0.25em solid #000000;
+    border-radius: 1.5em;
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+#contact legend {
+    font-weight: bold;
+    padding: 0.5em 1em;
+    border: 0.2em solid #000000;
+    border-radius: 1em;
+    background-color: beige;
+    color: #003B4A;
+}
+
+#contact label{
+    display: block;
+    margin: 1em 0 0.5em 0;
+}
+
+#contact input,
+#contact select,
+#contact textarea {
+    width: 100%;
+    padding: 0.75;
+    border-radius: 1em;
+    background-color: beige;
+    color: #003B4A;
+    margin-bottom: 1em;
+}
+
+#contact textarea {
+    height: 7em;
+}
+
+#contact fieldset fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+
+#contact fieldset fieldset input {
+    width: auto;
+    margin: 0;
+    display: inline-block;
+}
+
+#contact fieldset fieldset label {
+    display: inline;
+    margin: 0 0 0 0.5em;
+}
+
+
+/* #fieldset, legend {
     border: 10px solid #000000;
     border-radius: 40px;
     margin-top: 10px;
@@ -157,4 +221,4 @@ fieldset ul {
 fieldset li {
     list-style-type: none;
     
-}
+} */
