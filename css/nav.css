@@ -23,8 +23,13 @@ main {
 
 /* navbar */
 
+h1 {
+    text-align: center;
+}
+
+
 .navbar {
-    background-color: #333;
+    background-color: #000;
     color: white;
     display: flex;
     flex-direction: column;
@@ -38,7 +43,7 @@ main {
 }
 
 .logo img {
-    width: 80px;
+    width: 40px;
     margin: 10px;
 }
 
@@ -73,7 +78,7 @@ main {
     text-decoration: none;
     padding: .75ex;
     border-radius: .5ex;
-    background-color: #333;
+    background-color: #000;
     display: inline-block;
     padding: 1ex;
 }

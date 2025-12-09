@@ -36,6 +36,7 @@ footer {
 #hero img {
     width: 300px;
     max-width: 100%;
+    border-radius: 50%;
 }
 
 /* Biographical Info */
