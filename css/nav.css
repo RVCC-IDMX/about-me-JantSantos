@@ -45,6 +45,7 @@ h1 {
 .logo img {
     width: auto;
     height: 1.8em;
+    margin: 20px;
 }
 
 .logo h1 {

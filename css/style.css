@@ -29,6 +29,7 @@ header {
 #hero {
     border-top: 3px solid #000000;
     border-bottom: 3px solid #000000;
+    border-radius: 50px;
     padding: 0; 
     margin: 0; 
     background-color: #F5F5DC;
@@ -46,18 +47,27 @@ header {
     box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
 }
 
+#hero p {
+    font-size: 25pt;
+    font-weight: bold;
+}
+
 /* Biographical Info */
 
 #bio {
-    border-top: 3px solid #000000;
+    border-top: 3px solid #000000; /*top bottom line*/
     border-bottom: 3px solid #000000;
-    border-radius: 20px; 
+    border-radius: 20px; /*sharp curve type beat*/
     padding: 30px 20px 20px 20px;
     margin: 20px auto;
     background-color: #F5F5DC;
     max-width: 900px;
     text-align: center;
-    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#bio p {
+    font-size: 15pt;
 }
 
 #hobbies {
@@ -77,6 +87,7 @@ header {
     margin-bottom: 15px;
 }
 
+
 #hobbies ul {
     list-style: none; /*removing of bullets*/
     padding: 0;
@@ -84,7 +95,7 @@ header {
 
 #hobbies ul li {
     padding: 8px 0;
-    font-size: 1.1em;
+    font-size: 15pt;
 }
 /*Image Gallery */
 #gallery {
@@ -100,13 +111,13 @@ header {
 
 /* Hover effect */
 #gallery figure {
-    position: relative;
-    overflow: hidden; /* zoom */
+    position: relative; /*enables text pop-up*/
+    overflow: hidden; /* keeps the zoomed pic in box */
     display: inline-block;
     margin: 15px;
     border-radius: 15px;
     cursor: pointer;
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    transition: 0.8s ease, box-shadow 0.8s ease;
 }
 
 /* Pictures */
@@ -115,7 +126,7 @@ header {
     width: 100%;
     height: auto; 
     border-radius: 15px;
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    transition: 0.8s ease, box-shadow 0.8s ease; /*time for animation to zoom in*/
     box-shadow: none; 
 }
 
@@ -128,17 +139,16 @@ header {
 /* Caption overlay */
 #gallery figcaption {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 0; /*centering text pop up*/
+    left: 0; /*centering text pop up */
     width: 100%;
     padding: 1em;
     color: #F5F5DC;
     font-size: 1.1em;
     text-align: center;
-    background: rgba(0,0,0,0.5);
-    opacity: 0;
+    background: rgba(0,0,0,0.5); /*tiny pop up text section opacity*/
     transform: translateY(100%);
-    transition: opacity 0.5s ease, transform 0.5s ease;
+    transition: 0.8s ease, transform 0.8s ease;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
@@ -157,8 +167,7 @@ header {
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,0.3);
-    opacity: 0;
-    transition: opacity 0.5s ease;
+    transition: 0.8s ease;
 }
 
 #gallery figure:hover::before {
@@ -166,11 +175,11 @@ header {
 }
 
 #gallery hr {
-    border: none;           /* Remove default border */
-    border-top: 2px solid #000000; /* Black top border */
-    margin: 20px 0;         /* Space above and below the line */
-    width: 95%;             /* Makes the underline be the same length as the picture */
-    margin-left: auto;      /* Makes the underline center */
+    border: none;           /* remove default border */
+    border-top: 2px solid #000000; /* black top border */
+    margin: 20px 0;         /* space above and below the line */
+    width: 95%;             /* makes the underline be the same length as the picture */
+    margin-left: auto;      /* makes the underline center */
     margin-right: auto;
 }
 /*Article*/
@@ -183,7 +192,7 @@ header {
     background-color: #F5F5DC;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     text-align: center;
-    box-sizing: border-box;
+    
 }
 
 #lit h2 {
@@ -192,6 +201,7 @@ header {
 }
 
 #lit p {
+    font-size: 15pt;
     padding: 0.2em;
     padding-top: 10px;
     text-align: center;
@@ -367,6 +377,7 @@ iframe {
     max-width: 650px;
     margin: 2em auto;
     text-align: left;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 #contact h2 {
