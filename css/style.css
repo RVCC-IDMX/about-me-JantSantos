@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Text:ital@0;1&display=swap');
 
-/* BAse body style */
+/* Base body style */
 body {
     margin: 0;
     padding: 0;
@@ -29,13 +29,13 @@ header {
 #hero {
     border-top: 3px solid #000000;
     border-bottom: 3px solid #000000;
-    padding: 0; /* border to extend to the right and left */
-    margin: 0; /* border to extend to the right and left */
+    padding: 0; 
+    margin: 0; 
     background-color: #F5F5DC;
     width: 100%;
     min-height: 400px;
     text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* pang shadows */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
 }
 
 #hero img {
@@ -78,7 +78,7 @@ header {
 }
 
 #hobbies ul {
-    list-style: none;
+    list-style: none; /*removing of bullets*/
     padding: 0;
 }
 
@@ -86,11 +86,11 @@ header {
     padding: 8px 0;
     font-size: 1.1em;
 }
-/*image Gallery */
+/*Image Gallery */
 #gallery {
     border: 3px solid #000000;
     border-radius: 15px;
-    padding: 20px; /* acciddent but it works and I like the design*/
+    padding: 20px;
     margin: 40px auto;
     max-width: 900px;
     background-color: #F5F5DC;
@@ -98,25 +98,82 @@ header {
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-#gallery img {
-    max-width: 100%;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+/* Hover effect */
+#gallery figure {
+    position: relative;
+    overflow: hidden; /* zoom */
+    display: inline-block;
+    margin: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
-#gallery figure {
-    display: inline-block;
-    margin: 10px;
+/* Pictures */
+#gallery figure img {
+    display: block;
+    width: 100%;
+    height: auto; 
+    border-radius: 15px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    box-shadow: none; 
+}
+
+/* Zoom and shadow effect on hover */
+#gallery figure:hover img {
+    transform: scale(1.1);
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.3); 
+}
+
+/* Caption overlay */
+#gallery figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1em;
+    color: #F5F5DC;
+    font-size: 1.1em;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* Rising caption */
+#gallery figure:hover figcaption {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Overlay effect */
+#gallery figure::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#gallery figure:hover::before {
+    opacity: 100;
 }
 
 #gallery hr {
-    border: none;
-    border-top: 3px solid #000000;
-    margin: 20px 0;
-    border-radius: 5px;
+    border: none;           /* Remove default border */
+    border-top: 2px solid #000000; /* Black top border */
+    margin: 20px 0;         /* Space above and below the line */
+    width: 95%;             /* Makes the underline be the same length as the picture */
+    margin-left: auto;      /* Makes the underline center */
+    margin-right: auto;
 }
-
 /*Article*/
 #lit {
     border-top: 3px solid #000000;
@@ -255,4 +312,3 @@ iframe {
     font-size: 0.85em;
     cursor: pointer;
 }
-
