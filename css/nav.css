@@ -27,7 +27,6 @@ h1 {
     text-align: center;
 }
 
-
 .navbar {
     background-color: #000;
     color: white;
@@ -52,9 +51,7 @@ h1 {
     font-size: 2em;
 }
 
-
 /* navigation list */
-
 
 .navbar-links ul {
     padding: 0;
