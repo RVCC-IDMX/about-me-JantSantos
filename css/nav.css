@@ -23,8 +23,12 @@ main {
 
 /* navbar */
 
+h1 {
+    text-align: center;
+}
+
 .navbar {
-    background-color: #333;
+    background-color: #000;
     color: white;
     display: flex;
     flex-direction: column;
@@ -38,23 +42,16 @@ main {
 }
 
 .logo img {
-    width: 80px;
-    margin: 10px;
+    width: auto;
+    height: 36px;
+    margin: 25px;
 }
 
 .logo h1 {
     font-size: 2em;
 }
 
-
 /* navigation list */
-
-.navbar
-
-/* .navbar {
-    display: flex;
-    align-items: center;
-} */
 
 .navbar-links ul {
     padding: 0;
@@ -73,7 +70,7 @@ main {
     text-decoration: none;
     padding: .75ex;
     border-radius: .5ex;
-    background-color: #333;
+    background-color: #000;
     display: inline-block;
     padding: 1ex;
 }
